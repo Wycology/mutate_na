@@ -1,15 +1,48 @@
 ---
-title: "mutate_na"
-author: "Wyclife Agumba Oluoch"
-date: "9/6/2021"
+title: "<center><font aspan size = '6'>Mutating a column in data frame with some NA values</font></center>"
+author: "<center>Wyclife Agumba Oluoch wyclifeoluoch@gmail.com</center>"
+date: "<center>`r Sys.time()`</center>"
 output: 
-  html_document: default
   github_document: default
+  html_notebook: default
+bibliography: packages.bib
+nocite: '@*'
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+```{r libs, echo=FALSE, warning=FALSE, message=FALSE, include=FALSE}
+packages <- c("dplyr",
+              'base',
+              'knitr',
+              'rmarkdown')
+installed_packages <- packages %in% rownames(installed.packages())
+if(any(installed_packages == FALSE)){
+  install.packages(packages[!installed_packages])
+}
+lapply(packages, library, character.only = TRUE) |> 
+  invisible()
+```
+
+```{r write_bib, echo=FALSE, warning=FALSE, message=FALSE, include=FALSE}
+knitr::write_bib(c(
+  .packages(), packages
+), 'packages.bib')
+```
+
+# Introduction
+
+In this short article I demonstrate how to mutate a column in a data frame with some NA values so that cases where value is NA are assigned some 'real' values (not NAs). I am doing this because it gave me some hard time and later I got a way out. 
+
+# The code
+
+```{r NA}
+x <- data.frame(column = c(1:5, NA, 9, NA, 14, NA))
+x_mutated <- x |> mutate(mutated = case_when(column <= 5 ~ 'Small', column > 5 ~ 'Big', column |> is.na() ~ 'This is NA'))
+kable(x_mutated)
+```
+
+# References
 
