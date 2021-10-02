@@ -4,7 +4,7 @@ author: "<center>Wyclife Agumba Oluoch wyclifeoluoch@gmail.com</center>"
 date: "<center>`r Sys.time()`</center>"
 output: 
   github_document: default
-  #html_notebook: defau
+  #html_notebook: def
 bibliography: packages.bib
 nocite: '@*'
 ---
