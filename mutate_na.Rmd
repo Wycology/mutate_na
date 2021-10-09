@@ -35,7 +35,7 @@ knitr::write_bib(c(
 
 In this short article I demonstrate how to mutate a column in a data frame with some NA values so that cases where value is NA are assigned some 'real' values (not NAs). I am doing this because it gave me some hard time and later I got a way out. 
 
-# 
+#
 
 ```{r NA}
 x <- data.frame(column = c(1:5, NA, 9, NA, 14, NA))
