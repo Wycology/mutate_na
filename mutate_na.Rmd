@@ -33,7 +33,7 @@ knitr::write_bib(c(
 
 # Introduction
 
-In this article I demonstrate how to mutate column in data frame 
+In this article I demonstrate how to mutate col
 
 
 ```{r NA}
