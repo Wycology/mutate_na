@@ -33,7 +33,7 @@ knitr::write_bib(c(
 
 # Introduction
 
-In this article I demonstrate how to mutate column in data frame with some NA values so that cases where value is NA are assigned some 'real' values (not NAs). I am doing this because it gave me some hard time and later I got a way out. 
+In this article I demonstrate how to mutate column in data frame with some NA values so that cases where value is NA are assigned some 'real' values (not NAs). I am doing this because it gave me some hard time and 
 
 
 
