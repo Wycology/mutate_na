@@ -1,5 +1,5 @@
 ---
-title: "<center><font aspan size = '6'>Mutate column in data.frame with some NA values</font></center>"
+title: "<center><font aspan size = '6'>Mutate column in data.frame with so NA values</font></center>"
 author: "<center>Wyclife Agumba Oluoch wyclifeoluoch@gmail.com</center>"
 date: "<center>`r Sys.time()`</center>"
 output: 
