@@ -33,7 +33,7 @@ knitr::write_bib(c(
 
 # Introduction
 
-This is a short
+This is a short article
 
 ```{r NA}
 x <- data.frame(column = c(1:5, NA, 9, NA, 14, NA))
