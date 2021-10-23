@@ -1,23 +1,15 @@
 <center>
-<font aspan size = '6'>Mutating a column in data frame with some NA
-values</font>
+<font aspan size = '6'>Mutate column in data.frame with NA values</font>
 </center>
 ================
 <center>
 Wyclife Agumba Oluoch <wyclifeoluoch@gmail.com>
 </center>
 <center>
-2021-10-02 21:31:17
+2021-10-23 21:25:48
 </center>
 
 # Introduction
-
-In this short article I demonstrate how to mutate a column in a data
-frame with some NA values so that cases where value is NA are assigned
-some ‘real’ values (not NAs). I am doing this because it gave me some
-hard time and later I got a way out.
-
-# The code
 
 ``` r
 x <- data.frame(column = c(1:5, NA, 9, NA, 14, NA))
